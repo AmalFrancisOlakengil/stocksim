@@ -2,14 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCm0V_DXISarvofy8tVswn1ga6k_KE6YYY",
-    authDomain: "realtime-stock-38793.firebaseapp.com",
-    projectId: "realtime-stock-38793",
-    storageBucket: "realtime-stock-38793.firebasestorage.app",
-    messagingSenderId: "855535457576",
-    appId: "1:855535457576:web:a66f07a2e9cb6ead43ac1d",
-    measurementId: "G-2BTQZV2JSV",
-    databaseURL: "https://realtime-stock-38793-default-rtdb.asia-southeast1.firebasedatabase.app/"
+    apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+    authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+    measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
+    databaseURL: process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL
 };
 
 export const app = initializeApp(firebaseConfig);
