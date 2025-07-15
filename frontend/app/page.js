@@ -133,18 +133,11 @@ export default function Home() {
                 <a href="mailto:francisamal030@gmail.com" className="text-blue-600 hover:underline">
                   francisamal030@gmail.com
                 </a>
-                <br></br>
-                <a href="mailto:ssvidip@gmail.com " className="text-blue-600 hover:underline">
-                  ssvidip@gmail.com                </a>
               </div>
               <div>
                 <h3 className="text-lg font-semibold text-gray-700 mb-2">Phone</h3>
                 <a href="tel:+919363032004" className="text-blue-600 hover:underline">
                   (91) 9363032004
-                </a>
-                <br></br>
-                <a href="tel:+919384844941" className="text-blue-600 hover:underline">
-                  (91) 9384844941
                 </a>
               </div>
             </div>

@@ -64,8 +64,8 @@ export default function StockDetails() {
     };
 
     const handleBuy = () => {
-        if (ownedStock || soldStock) {
-            alert("You already own or have sold this stock!");
+        if (ownedStock) {
+            alert("You already own this stock!");
             return;
         }
         
@@ -171,9 +171,9 @@ export default function StockDetails() {
                                 </button>
                                     <button 
                                         onClick={handleSell}
-                                        disabled={!ownedStock || soldStock}
+                                        disabled={!ownedStock}
                                         className={`px-4 py-2 rounded-md font-medium w-full sm:w-auto ${
-                                            !ownedStock || soldStock 
+                                            !ownedStock
                                                 ? 'bg-gray-300 text-gray-600 cursor-not-allowed' 
                                                 : 'bg-red-600 text-white hover:bg-red-700'
                                         }`}
