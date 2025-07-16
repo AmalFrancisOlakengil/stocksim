@@ -92,12 +92,6 @@ export default function StockDetails() {
             alert("You don't own this stock to sell!");
             return;
         }
-        
-        if (soldStock) {
-            alert("You already sold this stock!");
-            return;
-        }
-
         const openRef = ref(database, `trades/${userid}/open/${stocky}`);
         const closedRef = ref(database, `trades/${userid}/closed/${stocky}`);
         
