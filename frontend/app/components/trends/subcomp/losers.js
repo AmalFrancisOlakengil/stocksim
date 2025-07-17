@@ -94,6 +94,7 @@ export default function Losers() {
                                 className="flex justify-between items-center p-3 bg-red-50 rounded-lg cursor-pointer hover:bg-red-100 transition-colors"
                             >
                                 <span className="font-medium text-gray-800">{name}</span>
+                                <span className="text-red-600"> Click to view details</span>
                                 <span className="font-bold text-red-600">
                                     -{Math.abs(priceChange)}% (${losers.prices[index].toFixed(2)})
                                 </span>
